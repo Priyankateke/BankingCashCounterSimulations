@@ -5,11 +5,11 @@ class Node {
     int amount;
     Node next;
 }
+
 public class CashCounter {
     Node head;
-
     //Inserting the people and initial amount in queue
-    public void insert(int peopleNumber,int amount) {
+   public void insert(int peopleNumber,int amount) {
         Node new_node=new Node();
         new_node.peopleNumber=peopleNumber;
         new_node.amount=amount;
@@ -21,7 +21,7 @@ public class CashCounter {
         else {
             Node current=head;
             while (current.next!=null) {
-                current=current.next;
+                 current=current.next;
             }
             current.next=new_node;
         }
